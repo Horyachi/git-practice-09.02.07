@@ -5,6 +5,11 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    """Делит число a на число b.
+    
+    Raises:
+        ValueError: если b равно нулю.
+    """
     if b == 0:
         raise ValueError('Division by zero is not allowed')
     return a / b
